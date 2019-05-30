@@ -1,12 +1,14 @@
 @import "variables";
 @import "mixins";
 
+
+
 body {
     width: 100%;
     height: 100%;
     font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
-    background-color: black;
+    background-color: #e4b9c0;
 }
 
 html {
@@ -39,7 +41,7 @@ p {
 }
 
 a {
-    color: $primary;
+    color: white;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -59,7 +61,7 @@ a {
     border-bottom: 1px solid rgba(white, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: black;
+    background-color: #e4b9c0;
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
@@ -71,6 +73,7 @@ a {
     }
     .navbar-brand {
         font-weight: 700;
+        color: white;
         &:focus {
             outline: none;
         }
@@ -116,7 +119,7 @@ a {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: black;
+            background: #e4b9c0;
             border-bottom: 1px solid rgba(white, 0.3);
         }
     }
@@ -129,8 +132,7 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: black;
+    background-color: #e4b9c0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -138,9 +140,7 @@ a {
     .intro-body {
         display: table-cell;
         vertical-align: middle;
-        .brand-heading {
-            font-size: 40px;
-        }
+
         .intro-text {
             font-size: 18px;
         }
@@ -240,8 +240,7 @@ a {
     width: 100%;
     padding: 50px 0;
     color: white;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: black;
+    background-color: #e4b9c0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -256,7 +255,7 @@ a {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .download-section {
@@ -266,6 +265,10 @@ a {
     #map {
         height: 400px;
         margin-top: 250px;
+    }
+
+    .portfolio-download {
+        padding-top: 30px;
     }
 }
 
@@ -338,4 +341,68 @@ img::-moz-selection {
 
 body {
     -webkit-tap-highlight-color: rgba(white, 0.2);
+}
+
+.project {
+    width: 330px;
+    height: 330px;
+    background-color: white;
+    display: inline-block;
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.memoryMatch {
+    background-image: url("../img/Screenshot (16).png");
+}
+
+.expenseTracker {
+    background-image: url("../img/Screenshot (17).png");
+}
+
+.paws {
+    background-image: url("../img/Screenshot (18).png");
+}
+
+.memoryMatch,
+.expenseTracker,
+.paws {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.projectShow {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.projectShow h4,
+.projectShow p {
+    color: #5e5e5e;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.projectShowText {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projectShowBtn {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 120%;
+}
+
+.brand-heading {
+    font-size: 490%;
 }
