@@ -9,15 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Stella's Portfolio</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="sass/grayscale.scss" rel="stylesheet">
@@ -55,6 +55,9 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#page-top">Home</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
@@ -62,9 +65,6 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#hobbies">Hobbies</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -80,14 +80,30 @@
     <header class="intro">
         <div class="intro-body">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Stella Hsin</h1>
-                        <p class="intro-text"> Welcome to My Portfolio Page</p>
+                <div class="row introRow">
+                    <div class="col-md-12 introContainer">
+                        <!--<h1 class="brand-heading">Stella Hsin</h1>-->
+                        <img src="img/shootingstar.png" alt="star" class="star1">
+                        <div class="leftDiv">
+                            <p class="welcome">WELCOME</p>
+                            <p class="to">TO</p>
+                            <p class="the">THE</p>
+                            <p class="portfolio">PORTFOLIO</p>
+                            <P class="of">OF</P>
+                        </div>
+                        <div class="middleDiv">
+                            <p>S</p>
+                        </div>
+                        <div class="rightDiv">
+                            <p class="name">STELLA HSIN</p>
+                            <p class="frontend">Front End</p>
+                            <p class="and">And</p>
+                            <p class="backend">Back End</p>
+                            <p class="developer">Web Developer</p>
+                            <a href="#portfolio" class="portfolioBtn btn btn-default btn-sm">PORTFOLIO <span class="glyphicon glyphicon-arrow-right"></a>
+                            <a href="#contact" class="contactBtn btn btn-default btn-sm">CONTACT <span class="glyphicon glyphicon-arrow-right"></a>
+                        </div>
 
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -98,10 +114,9 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Stella Hsin</h2>
-                <p>add the about section <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                <h2>About Me</h2>
+                <p>UC Berkeley graduate with bachelor degree in Economics and a 3.79 GPA. After self-learning programming by taking the Harvard CS50 course online course, I fell in love with coding. That's why I decided to attend LearningFuze, an accelerated Web Development Program, to further improve my coding skill and deepening my knowledge on both front end and back end technologies such as JavaScript, jQuery, PHP, Node and MySQL.</p>
+                <p>My dedication and my self-learning ability have allowed me to always become one of the top performers in every class/field I am in. My current goal is to continue to learn and become a SME developer. I firmly believe persistence and hard-work will make impossible things possible.</p>
             </div>
         </div>
     </section>
@@ -112,8 +127,105 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Skills</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                    <div class="mainSkillDiv">
+                        <div class="firstSkillRow">
+                            <div class="skillList htmlDiv">
+                                <h4>HTML</h4>
+                                <ul class="htmlList">
+                                    <li>
+                                        <img src="img/html-5-icon.png" class="icon">
+                                        <span>HTML5</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/react_1353128.png" class="icon">
+                                        <span>JSX</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skillList cssDiv">
+                                <h4>CSS</h4>
+                                <ul class="cssList">
+                                    <li>
+                                        <img src="img/materialize_67796.png" class="icon">
+                                        <span>Materialize</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/Bootstrap-Logo-PNG.png" class="icon">
+                                        <span>Bootstrap</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/css-118-569410.png" class="icon">
+                                        <span>CSS3</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/sass-226054.png" class="icon">
+                                        <span>SASS</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skillList javascriptDiv">
+                                <h4>JavaScript</h4>
+                                <ul class="javascriptList">
+                                    <li>
+                                        <img src="img/js-logo.png" class="icon">
+                                        <span>JavaScript</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/jquery-icon.png" class="icon">
+                                        <span>jQuery</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/react_1353128.png" class="icon">
+                                        <span>React</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/node.png" class="icon">
+                                        <span>Node</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="secondSkillRow">
+                            <div class="skillList otherDiv">
+                                <h4>Other</h4>
+                                <ul class="otherList">
+                                    <li>
+                                        <img src="img/python-icon-28.jpg" class="icon">
+                                        <span>Python</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/php.png" class="icon">
+                                        <span>PHP</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/SQL-Database-generic.png" class="icon">
+                                        <span>SQL</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/c-programming.png" class="icon">
+                                        <span>C</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skillList toolDiv">
+                                <h4>Tools</h4>
+                                <ul class="toolList">
+                                    <li>
+                                        <img src="img/webpack.png" class="icon">
+                                        <span>Webpack</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/github.png" class="icon">
+                                        <span>GitHub</span>
+                                    </li>
+                                    <li>
+                                        <img src="img/git.png" class="icon">
+                                        <span>Git</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,36 +271,20 @@
         </div>
     </section>
 
-    <!-- Hobbies Section -->
-    <section id="hobbies" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Hobbies</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                <h2>Contact</h2>
+                <p>I am available for hire. If you have any questions or just want to say hello, feel free to contact me.</p>
+                <p><a href="mailto:stellaxxy0109@gmail.com">stellaxxy0109@gmail.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://www.linkedin.com/in/xiaoyun-hsin-9003a47a/" class="btn btn-default btn-lg linkedinContact"><img src="img/linkedin-black.png" class="linkedinBtn" alt="linkedin icon"><span class="network-name">LinkedIn</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        <a href="https://github.com/stellaxxy" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
                 </ul>
             </div>
@@ -198,7 +294,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
+            <p>Copyright &copy; stellaxyh.com</p>
         </div>
     </footer>
 

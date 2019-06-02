@@ -6,7 +6,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
     background-color: #e4b9c0;
 }
@@ -128,15 +128,13 @@ a {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding: 100px 0;
+    height: 99%;
+    padding: 80px 0;
     text-align: center;
     color: white;
-    background-color: #e4b9c0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    overflow: hidden;
+    position: relative;
+
     .intro-body {
         display: table-cell;
         vertical-align: middle;
@@ -158,6 +156,8 @@ a {
         }
     }
 }
+
+
 
 .btn-circle {
     width: 70px;
@@ -406,3 +406,241 @@ body {
 .brand-heading {
     font-size: 490%;
 }
+
+.skillList {
+    display: inline-block;
+}
+
+.skillList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skillList ul li {
+    position: relative;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.skillList span {
+    font-size: 145%;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.skillList h4 {
+    font-size: 170%;
+}
+
+h2 {
+    font-size: 270%;
+}
+
+.mainSkillDiv {
+    width: 100%;
+}
+
+.firstSkillRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.secondSkillRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#skills {
+    padding-top: 100px;
+}
+
+#skills .download-section {
+    padding-top: 80px;
+}
+
+.leftDiv,
+.middleDiv,
+.rightDiv {
+    display: inline-block;
+}
+
+.intro-body {
+    height: 100%;
+}
+
+.container,
+.introContainer {
+    height: 100%;
+}
+
+.introRow {
+    height: 100%;
+}
+
+.introContainer {
+    position: relative;
+}
+
+.leftDiv,
+.middleDiv,
+.rightDiv {
+    position: absolute;
+    height: 100%;
+}
+
+.leftDiv {
+    width: 28%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rightDiv {
+    width: 28%;
+    right: 0;
+}
+
+.middleDiv {
+    width: 44%;
+    left: 28%;
+}
+
+.leftDiv p,
+.rightDiv p {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+}
+
+.leftDiv p {
+    font-size: 160%;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.welcome {
+    top: 12%;
+    right: 25%;
+}
+
+.to {
+    top: 19%;
+    right: 22%;
+}
+
+.the {
+    top: 29%;
+    right: 31%;
+}
+
+.portfolio {
+    top: 37%;
+    right: 0;
+}
+
+.of {
+    top: 48%;
+    right: 3%;
+}
+
+.middleDiv p {
+    font-size: 2700%;
+    font-weight: bold;
+    text-shadow: 4px 12px 0 #ce8483;
+}
+
+.name {
+    bottom: 42%;
+    left: 3%;
+}
+
+.frontend {
+    bottom: 35%;
+    left: 3%;
+    font-weight: bold;
+    background-color: white;
+    color: #e4b9c0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.and {
+    bottom: 28%;
+    left: 3%;
+}
+
+.backend {
+    bottom: 21%;
+    left: 3%;
+    font-weight: bold;
+    background-color: white;
+    color: #e4b9c0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.developer {
+    bottom: 14%;
+    left: 3%;
+}
+
+.rightDiv p {
+    left: 4%;
+    font-size: 140%;
+}
+
+.portfolioBtn {
+    bottom: 9%;
+}
+
+.contactBtn {
+    bottom: 0;
+}
+
+.portfolioBtn,
+.contactBtn {
+    position: absolute;
+    left: 5%;
+    color: white;
+    font-size: 120%;
+    border-color: white;
+}
+
+.star1 {
+    width: 130px;
+    position: absolute;
+    right: -160px;
+    top: -100px;
+    animation: starMove 6s infinite;
+}
+
+@keyframes starMove {
+    from {
+        transform: translate(80vw, -120vh);
+    }
+    to {
+        transform: translate(-100vw, 120vh);
+    }
+}
+
+.linkedinBtn {
+    width: 22px;
+    padding-right: 5%;
+    vertical-align: middle;
+}
+
+.linkedinContact span {
+    vertical-align: middle;
+}
+
