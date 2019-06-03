@@ -407,6 +407,10 @@ body {
     font-size: 490%;
 }
 
+.firstSkillRow .skillList {
+    width: 33.3%;
+}
+
 .skillList {
     display: inline-block;
 }
@@ -456,10 +460,11 @@ h2 {
 
 #skills {
     padding-top: 100px;
+    height: 100%;
 }
 
 #skills .download-section {
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .leftDiv,
@@ -517,11 +522,6 @@ h2 {
 
 .leftDiv p {
     font-size: 160%;
-}
-
-.container {
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .row {
@@ -634,13 +634,246 @@ h2 {
     }
 }
 
-.linkedinBtn {
+.linkedinBtn,
+.githubBtn {
     width: 22px;
     padding-right: 5%;
     vertical-align: middle;
 }
 
-.linkedinContact span {
+.githubBtn {
+    width: 35px;
+}
+
+.linkedinContact span,
+.github span {
     vertical-align: middle;
 }
 
+#portfolio {
+    padding-top: 100px;
+}
+
+
+
+@media(max-width:1024px) and (orientation: portrait){
+    .nav li {
+         font-size: 150%;
+     }
+    .leftDiv p {
+        font-size: 220%;
+    }
+    .rightDiv p {
+        font-size: 225%;
+    }
+    .middleDiv p {
+        font-size: 3500%;
+        position: relative;
+        top: 14%;
+    }
+    .contactBtn {
+        bottom: 7%;
+    }
+    .portfolioBtn {
+        bottom: 13%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 190%;
+    }
+    #about p {
+        font-size: 175%;
+    }
+    h2 {
+        font-size: 400%;
+    }
+    #portfolio {
+        height: 95%;
+    }
+    .name {
+        bottom: 40%;
+    }
+    .frontend {
+        bottom: 35%;
+    }
+    .and {
+        bottom: 30%;
+    }
+    .backend {
+        bottom: 25%;
+    }
+    .developer {
+        bottom: 20%;
+    }
+    .skillList h4 {
+        font-size: 250%;
+    }
+    .skillList span {
+        font-size: 230%;
+    }
+    #contact p {
+        font-size: 210%;
+    }
+    .network-name {
+        font-size: 170%;
+    }
+    .linkedinBtn {
+        width: 48px;
+    }
+    .githubBtn {
+        width: 73px;
+    }
+    .linkedinContact,
+    .github {
+        border: 3px solid lightgrey;
+    }
+}
+
+@media(max-width:768px) {
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 160%;
+    }
+    .contactBtn {
+        bottom: 6%;
+    }
+    .nav li {
+        font-size: 110%;
+    }
+    .leftDiv p {
+        font-size: 180%;
+    }
+    .rightDiv p {
+        font-size: 165%;
+    }
+    .middleDiv p {
+        font-size: 2700%;
+    }
+    #about p {
+        font-size: 160%;
+    }
+    h2 {
+        font-size: 350%;
+    }
+    .skillList h4 {
+        font-size: 230%;
+    }
+    .skillList span {
+        font-size: 210%;
+    }
+}
+
+@media(max-width:576px){
+    .skillList h4 {
+        font-size: 150%;
+        margin-bottom: 15px;
+    }
+    .firstSkillRow .skillList {
+        width: 100%;
+    }
+    .firstSkillRow {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    #contact a,
+    #contact p {
+        font-size: 120%;
+    }
+    h2 {
+        font-size: 210%;
+    }
+    #about,
+    #skills,
+    #portfolio,
+    #contact {
+        height: auto;
+    }
+    .leftDiv p {
+        font-size: 120%;
+    }
+    .middleDiv p {
+        font-size: 2100%;
+        top: -5%;
+        right: 9%;
+    }
+    .rightDiv p {
+        font-size: 120%;
+        left: -24%;
+    }
+    .welcome {
+        top: 3%;
+        right: 20%;
+    }
+    .to {
+        top: 7%;
+    }
+    .the {
+        top: 13%;
+    }
+    .portfolio {
+        top: 19%;
+    }
+    .of {
+        top: 25%;
+        right: 15%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 92%;
+        width: 116px;
+    }
+    .portfolioBtn {
+        bottom: 3.5%;
+        left: -140%;
+    }
+    .contactBtn {
+        bottom: -4.5%;
+        left: -140%;
+    }
+    .name {
+        bottom: 25.5%;
+    }
+    .frontend {
+        bottom: 20.5%;
+    }
+    .and {
+        bottom: 15.5%;
+    }
+    .backend {
+        bottom: 10.5%;
+    }
+    .developer {
+        bottom: 5.5%;
+    }
+    #about p {
+        font-size: 110%;
+    }
+    .skillList span {
+        font-size: 125%;
+    }
+    .skillList {
+        margin-bottom: 30px;
+    }
+    .secondSkillRow .skillList {
+        width: 100%;
+    }
+    .secondSkillRow {
+        flex-wrap: wrap;
+    }
+    footer p {
+        font-size: 90%;
+    }
+    .linkedinContact,
+    .github {
+        width: 140px;
+    }
+    .linkedinBtn {
+        width: 23px;
+    }
+    .network-name {
+        font-size: 100%;
+    }
+    .githubBtn {
+        width: 36px;
+    }
+}
