@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b31ccbb-742a-4f48-acce-a19ee1a4ffd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/grayscale.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/grayscale.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,13 +15,14 @@
     <session id="1438401750">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -54,19 +55,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="2125" />
+          <entry key="html" value="2144" />
           <entry key="js" value="695" />
           <entry key="less" value="6" />
-          <entry key="scss" value="4890" />
+          <entry key="scss" value="5936" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="2125" />
+          <entry key="HTML" value="2144" />
           <entry key="JavaScript" value="695" />
           <entry key="Less" value="6" />
-          <entry key="SCSS" value="4890" />
+          <entry key="SCSS" value="5936" />
         </counts>
       </usages-collector>
     </session>
@@ -76,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="286" column="99" selection-start-line="286" selection-start-column="93" selection-end-line="286" selection-end-column="99" />
+            <state relative-caret-position="245">
+              <caret line="169" column="73" selection-start-line="169" selection-start-column="73" selection-end-line="169" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -85,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/grayscale.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="876" column="20" selection-start-line="876" selection-start-column="20" selection-end-line="876" selection-end-column="20" />
+            <state relative-caret-position="467">
+              <caret line="1006" column="52" selection-start-line="1006" selection-start-column="52" selection-end-line="1006" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -152,10 +153,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1911" />
-    <option name="width" value="1182" />
-    <option name="height" value="1381" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1886" />
+    <option name="width" value="1325" />
+    <option name="height" value="1383" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -234,18 +235,19 @@
       <workItem from="1554836597442" duration="683000" />
       <workItem from="1556770814143" duration="5438000" />
       <workItem from="1559153570450" duration="31110000" />
-      <workItem from="1559275849358" duration="63722000" />
+      <workItem from="1559275849358" duration="64393000" />
+      <workItem from="1559595299227" duration="7224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105239000" />
+    <option name="totallyTimeSpent" value="113134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1915" y="0" width="675" height="789" extended-state="1" />
+    <frame x="1901" y="0" width="757" height="790" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16045381" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21173105" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -325,21 +327,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/jquery/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery/jQuery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64770">
           <caret line="3810" column="4" selection-start-line="3810" selection-start-column="4" selection-end-line="3810" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -352,9 +345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6925">
           <caret line="1942" column="10" selection-start-line="1942" selection-start-column="7" selection-end-line="1942" selection-end-column="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -378,14 +368,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="169" column="73" selection-start-line="169" selection-start-column="73" selection-end-line="169" selection-end-column="73" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -394,17 +388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="286" column="99" selection-start-line="286" selection-start-column="93" selection-end-line="286" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/grayscale.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="876" column="20" selection-start-line="876" selection-start-column="20" selection-end-line="876" selection-end-column="20" />
+        <state relative-caret-position="467">
+          <caret line="1006" column="52" selection-start-line="1006" selection-start-column="52" selection-end-line="1006" selection-end-column="52" />
         </state>
       </provider>
     </entry>

@@ -729,7 +729,7 @@ h2 {
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:768px) and (orientation: portrait) {
     .portfolioBtn,
     .contactBtn {
         font-size: 160%;
@@ -763,7 +763,7 @@ h2 {
     }
 }
 
-@media(max-width:576px){
+@media(max-width:576px) and (orientation: portrait){
     .skillList h4 {
         font-size: 150%;
         margin-bottom: 15px;
@@ -875,5 +875,155 @@ h2 {
     }
     .githubBtn {
         width: 36px;
+    }
+}
+
+@media(max-width:320px) and (orientation: portrait){
+    .project {
+        width: 280px;
+        height: 280px;
+    }
+    .welcome {
+        top: 0;
+    }
+    .to {
+        top: 5%;
+    }
+    .the {
+        top: 11%;
+    }
+    .portfolio {
+        top: 17%;
+    }
+    .of {
+        top: 22%;
+    }
+    .middleDiv p {
+        font-size: 1800%;
+        top: -10%;
+        right: 14.5%;
+    }
+    .name {
+        bottom: 29.5%;
+    }
+    .frontend {
+        bottom: 24%;
+    }
+    .and {
+        bottom: 18.5%;
+    }
+    .backend {
+        bottom: 13%;
+    }
+    .rightDiv .developer {
+        left: -50%;
+        bottom: 7.5%;
+    }
+    .portfolioBtn {
+        bottom: 1.5%;
+    }
+    .contactBtn {
+        bottom: -7%;
+    }
+    #contact li {
+        margin-bottom: 5px;
+    }
+}
+@media(max-width:824px) and (orientation: landscape){
+    .leftDiv p {
+        font-size: 125%;
+    }
+    .middleDiv p {
+        font-size: 1500%;
+        position: relative;
+        top: -15%;
+    }
+    .rightDiv p {
+        font-size: 125%;
+    }
+    .to {
+        top: 21%;
+    }
+    .the {
+        top: 35%;
+    }
+    .portfolio {
+        top: 43%;
+    }
+    .of {
+        top: 58%;
+    }
+    .name {
+        bottom: 65%;
+    }
+    .frontend {
+        bottom: 53%;
+    }
+    .and {
+        bottom: 41%;
+    }
+    .backend {
+        bottom: 29%;
+    }
+    .developer {
+        bottom: 17%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 100%;
+    }
+    .contactBtn {
+        bottom: -10%;
+    }
+    h2 {
+        font-size: 220%;
+    }
+    #about p {
+        font-size: 100%;
+    }
+    .skillList h4 {
+        font-size: 150%;
+    }
+    .skillList span {
+        font-size: 120%;
+    }
+    #skills {
+        height: auto;
+    }
+    .project {
+        width: 280px;
+        height: 280px;
+    }
+    #contact p {
+        font-size: 100%;
+    }
+    #contact a {
+        font-size: 100%;
+    }
+    footer p {
+        font-size: 100%;
+    }
+}
+@media(max-width:569px) and (orientation: landscape){
+    .middleDiv p {
+        top: -30%;
+    }
+    .frontend {
+        bottom: 50%;
+    }
+    .and {
+        bottom: 35%;
+    }
+    .backend {
+        bottom: 20%;
+    }
+    .developer {
+        bottom: 5%;
+    }
+    .portfolioBtn {
+        bottom: 0;
+    }
+    .contactBtn {
+        bottom: -25%;
     }
 }
