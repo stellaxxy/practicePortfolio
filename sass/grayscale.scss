@@ -47,7 +47,6 @@ a {
     transition: all .2s ease-in-out;
     &:hover,
     &:focus {
-        text-decoration: none;
         color: darken($primary,20%);
     }
 }
@@ -348,6 +347,7 @@ body {
     height: 330px;
     background-color: white;
     display: inline-block;
+    border-radius: 15px;
 }
 
 .project:hover {
@@ -380,6 +380,7 @@ body {
     height: 100%;
     background-color: white;
     position: relative;
+    border-radius: 15px;
 }
 
 .projectShow h4,
@@ -655,6 +656,9 @@ h2 {
     padding-top: 100px;
 }
 
+.emailLink {
+    text-decoration: underline;
+}
 
 
 @media(max-width:1024px) and (orientation: portrait){
