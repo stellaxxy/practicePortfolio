@@ -615,6 +615,7 @@ h2 {
     color: white;
     font-size: 120%;
     border-color: white;
+    width: 185px;
 }
 
 .star1 {
@@ -680,6 +681,7 @@ h2 {
     .portfolioBtn,
     .contactBtn {
         font-size: 190%;
+        width: 215px;
     }
     #about p {
         font-size: 175%;
@@ -771,6 +773,7 @@ h2 {
     .portfolioBtn,
     .contactBtn {
         font-size: 100%;
+        width: 140px;
     }
     .contactBtn {
         bottom: -10%;
@@ -809,6 +812,7 @@ h2 {
     .portfolioBtn,
     .contactBtn {
         font-size: 160%;
+        width: 185px;
     }
     .contactBtn {
         bottom: 6%;
@@ -900,11 +904,11 @@ h2 {
     }
     .portfolioBtn {
         bottom: 3.5%;
-        left: -140%;
+        left: -135%;
     }
     .contactBtn {
         bottom: -4.5%;
-        left: -140%;
+        left: -135%;
     }
     .name {
         bottom: 25.5%;
@@ -1051,5 +1055,12 @@ h2 {
     }
     .rightDiv .developer {
         bottom: 4.5%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        left: -142%;
+    }
+    .middleDiv p {
+        right: 14%;
     }
 }
