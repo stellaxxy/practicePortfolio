@@ -5,6 +5,12 @@ function startApp(){
     $('.memoryMatch').click(handleMemoryDivClick);
     $('.expenseTracker').click(handleExpenseDivClick);
     $('.paws').click(handlePawsDivClick);
+    $('.intro').click(handleHideNav);
+    $('#about').click(handleHideNav);
+    $('#skills').click(handleHideNav);
+    $('#portfolio').click(handleHideNav);
+    $('#contact').click(handleHideNav);
+    $('footer').click(handleHideNav);
 }
 
 function handleHover(){
@@ -21,4 +27,8 @@ function handleExpenseDivClick(){
 
 function handlePawsDivClick(){
     window.open("http://pawssolution.com/", "_blank");
+}
+
+function handleHideNav(){
+    $('.navbar-main-collapse').toggleClass('in');
 }
