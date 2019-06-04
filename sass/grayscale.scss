@@ -1,12 +1,14 @@
 @import "variables";
 @import "mixins";
 
+
+
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
-    background-color: black;
+    background-color: #e4b9c0;
 }
 
 html {
@@ -39,7 +41,7 @@ p {
 }
 
 a {
-    color: $primary;
+    color: white;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -59,7 +61,7 @@ a {
     border-bottom: 1px solid rgba(white, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: black;
+    background-color: #e4b9c0;
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
@@ -71,6 +73,7 @@ a {
     }
     .navbar-brand {
         font-weight: 700;
+        color: white;
         &:focus {
             outline: none;
         }
@@ -116,7 +119,7 @@ a {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: black;
+            background: #e4b9c0;
             border-bottom: 1px solid rgba(white, 0.3);
         }
     }
@@ -125,22 +128,17 @@ a {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding: 100px 0;
+    height: 99%;
+    padding: 80px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    overflow: hidden;
+    position: relative;
+
     .intro-body {
         display: table-cell;
         vertical-align: middle;
-        .brand-heading {
-            font-size: 40px;
-        }
+
         .intro-text {
             font-size: 18px;
         }
@@ -158,6 +156,8 @@ a {
         }
     }
 }
+
+
 
 .btn-circle {
     width: 70px;
@@ -240,8 +240,7 @@ a {
     width: 100%;
     padding: 50px 0;
     color: white;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: black;
+    background-color: #e4b9c0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -256,7 +255,7 @@ a {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .download-section {
@@ -266,6 +265,10 @@ a {
     #map {
         height: 400px;
         margin-top: 250px;
+    }
+
+    .portfolio-download {
+        padding-top: 30px;
     }
 }
 
@@ -338,4 +341,726 @@ img::-moz-selection {
 
 body {
     -webkit-tap-highlight-color: rgba(white, 0.2);
+}
+
+.project {
+    width: 330px;
+    height: 330px;
+    background-color: white;
+    display: inline-block;
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.memoryMatch {
+    background-image: url("../img/Screenshot (16).png");
+}
+
+.expenseTracker {
+    background-image: url("../img/Screenshot (17).png");
+}
+
+.paws {
+    background-image: url("../img/Screenshot (18).png");
+}
+
+.memoryMatch,
+.expenseTracker,
+.paws {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.projectShow {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.projectShow h4,
+.projectShow p {
+    color: #5e5e5e;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.projectShowText {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projectShowBtn {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 120%;
+}
+
+.brand-heading {
+    font-size: 490%;
+}
+
+.firstSkillRow .skillList {
+    width: 33.3%;
+}
+
+.skillList {
+    display: inline-block;
+}
+
+.skillList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skillList ul li {
+    position: relative;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.skillList span {
+    font-size: 145%;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.skillList h4 {
+    font-size: 170%;
+}
+
+h2 {
+    font-size: 270%;
+}
+
+.mainSkillDiv {
+    width: 100%;
+}
+
+.firstSkillRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.secondSkillRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#skills {
+    padding-top: 100px;
+    height: 100%;
+}
+
+#skills .download-section {
+    padding-top: 40px;
+}
+
+.leftDiv,
+.middleDiv,
+.rightDiv {
+    display: inline-block;
+}
+
+.intro-body {
+    height: 100%;
+}
+
+.container,
+.introContainer {
+    height: 100%;
+}
+
+.introRow {
+    height: 100%;
+}
+
+.introContainer {
+    position: relative;
+}
+
+.leftDiv,
+.middleDiv,
+.rightDiv {
+    position: absolute;
+    height: 100%;
+}
+
+.leftDiv {
+    width: 28%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rightDiv {
+    width: 28%;
+    right: 0;
+}
+
+.middleDiv {
+    width: 44%;
+    left: 28%;
+}
+
+.leftDiv p,
+.rightDiv p {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+}
+
+.leftDiv p {
+    font-size: 160%;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.welcome {
+    top: 12%;
+    right: 25%;
+}
+
+.to {
+    top: 19%;
+    right: 22%;
+}
+
+.the {
+    top: 29%;
+    right: 31%;
+}
+
+.portfolio {
+    top: 37%;
+    right: 0;
+}
+
+.of {
+    top: 48%;
+    right: 3%;
+}
+
+.middleDiv p {
+    font-size: 2700%;
+    font-weight: bold;
+    text-shadow: 4px 12px 0 #ce8483;
+}
+
+.name {
+    bottom: 42%;
+    left: 3%;
+}
+
+.frontend {
+    bottom: 35%;
+    left: 3%;
+    font-weight: bold;
+    background-color: white;
+    color: #e4b9c0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.and {
+    bottom: 28%;
+    left: 3%;
+}
+
+.backend {
+    bottom: 21%;
+    left: 3%;
+    font-weight: bold;
+    background-color: white;
+    color: #e4b9c0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.developer {
+    bottom: 14%;
+    left: 3%;
+}
+
+.rightDiv p {
+    left: 4%;
+    font-size: 140%;
+}
+
+.portfolioBtn {
+    bottom: 9%;
+}
+
+.contactBtn {
+    bottom: 0;
+}
+
+.portfolioBtn,
+.contactBtn {
+    position: absolute;
+    left: 5%;
+    color: white;
+    font-size: 120%;
+    border-color: white;
+    width: 185px;
+}
+
+.star1 {
+    width: 130px;
+    position: absolute;
+    right: -160px;
+    top: -100px;
+    animation: starMove 6s infinite;
+}
+
+@keyframes starMove {
+    from {
+        transform: translate(80vw, -120vh);
+    }
+    to {
+        transform: translate(-100vw, 120vh);
+    }
+}
+
+.linkedinBtn,
+.githubBtn {
+    width: 22px;
+    padding-right: 5%;
+    vertical-align: middle;
+}
+
+.githubBtn {
+    width: 35px;
+}
+
+.linkedinContact span,
+.github span {
+    vertical-align: middle;
+}
+
+#portfolio {
+    padding-top: 100px;
+}
+
+
+
+@media(max-width:1024px) and (orientation: portrait){
+    .nav li {
+         font-size: 150%;
+     }
+    .leftDiv p {
+        font-size: 220%;
+    }
+    .rightDiv p {
+        font-size: 225%;
+    }
+    .middleDiv p {
+        font-size: 3500%;
+        position: relative;
+        top: 14%;
+    }
+    .contactBtn {
+        bottom: 7%;
+    }
+    .portfolioBtn {
+        bottom: 13%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 190%;
+        width: 215px;
+    }
+    #about p {
+        font-size: 175%;
+    }
+    h2 {
+        font-size: 400%;
+    }
+    #portfolio {
+        height: 95%;
+    }
+    .name {
+        bottom: 40%;
+    }
+    .frontend {
+        bottom: 35%;
+    }
+    .and {
+        bottom: 30%;
+    }
+    .backend {
+        bottom: 25%;
+    }
+    .developer {
+        bottom: 20%;
+    }
+    .skillList h4 {
+        font-size: 250%;
+    }
+    .skillList span {
+        font-size: 230%;
+    }
+    #contact p {
+        font-size: 210%;
+    }
+    .network-name {
+        font-size: 170%;
+    }
+    .linkedinBtn {
+        width: 48px;
+    }
+    .githubBtn {
+        width: 73px;
+    }
+    .linkedinContact,
+    .github {
+        border: 3px solid lightgrey;
+    }
+}
+
+@media(max-width:824px) and (orientation: landscape){
+    .leftDiv p {
+        font-size: 125%;
+    }
+    .middleDiv p {
+        font-size: 1500%;
+        position: relative;
+        top: -15%;
+    }
+    .rightDiv p {
+        font-size: 125%;
+    }
+    .to {
+        top: 21%;
+    }
+    .the {
+        top: 35%;
+    }
+    .portfolio {
+        top: 43%;
+    }
+    .of {
+        top: 58%;
+    }
+    .name {
+        bottom: 65%;
+    }
+    .frontend {
+        bottom: 53%;
+    }
+    .and {
+        bottom: 41%;
+    }
+    .backend {
+        bottom: 29%;
+    }
+    .developer {
+        bottom: 17%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 100%;
+        width: 140px;
+    }
+    .contactBtn {
+        bottom: -10%;
+    }
+    h2 {
+        font-size: 220%;
+    }
+    #about p {
+        font-size: 100%;
+    }
+    .skillList h4 {
+        font-size: 150%;
+    }
+    .skillList span {
+        font-size: 120%;
+    }
+    #skills {
+        height: auto;
+    }
+    .project {
+        width: 280px;
+        height: 280px;
+    }
+    #contact p {
+        font-size: 100%;
+    }
+    #contact a {
+        font-size: 100%;
+    }
+    footer p {
+        font-size: 100%;
+    }
+}
+
+@media(max-width:768px) and (orientation: portrait) {
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 160%;
+        width: 185px;
+    }
+    .contactBtn {
+        bottom: 6%;
+    }
+    .nav li {
+        font-size: 110%;
+    }
+    .leftDiv p {
+        font-size: 180%;
+    }
+    .rightDiv p {
+        font-size: 165%;
+    }
+    .middleDiv p {
+        font-size: 2700%;
+    }
+    #about p {
+        font-size: 160%;
+    }
+    h2 {
+        font-size: 350%;
+    }
+    .skillList h4 {
+        font-size: 230%;
+    }
+    .skillList span {
+        font-size: 210%;
+    }
+}
+
+@media(max-width:681px) and (orientation: portrait){
+    .skillList h4 {
+        font-size: 150%;
+        margin-bottom: 15px;
+    }
+    .firstSkillRow .skillList {
+        width: 100%;
+    }
+    .firstSkillRow {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    #contact a,
+    #contact p {
+        font-size: 120%;
+    }
+    h2 {
+        font-size: 210%;
+    }
+    #about,
+    #skills,
+    #portfolio,
+    #contact {
+        height: auto;
+    }
+    .leftDiv p {
+        font-size: 120%;
+    }
+    .middleDiv p {
+        font-size: 2100%;
+        top: -5%;
+        right: 9%;
+    }
+    .rightDiv p {
+        font-size: 120%;
+        left: -24%;
+    }
+    .welcome {
+        top: 3%;
+        right: 20%;
+    }
+    .to {
+        top: 7%;
+    }
+    .the {
+        top: 13%;
+    }
+    .portfolio {
+        top: 19%;
+    }
+    .of {
+        top: 25%;
+        right: 15%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 92%;
+        width: 116px;
+    }
+    .portfolioBtn {
+        bottom: 3.5%;
+        left: -135%;
+    }
+    .contactBtn {
+        bottom: -4.5%;
+        left: -135%;
+    }
+    .name {
+        bottom: 25.5%;
+    }
+    .frontend {
+        bottom: 20.5%;
+    }
+    .and {
+        bottom: 15.5%;
+    }
+    .backend {
+        bottom: 10.5%;
+    }
+    .developer {
+        bottom: 5.5%;
+    }
+    #about p {
+        font-size: 110%;
+    }
+    .skillList span {
+        font-size: 125%;
+    }
+    .skillList {
+        margin-bottom: 30px;
+    }
+    .secondSkillRow .skillList {
+        width: 100%;
+    }
+    .secondSkillRow {
+        flex-wrap: wrap;
+    }
+    footer p {
+        font-size: 90%;
+    }
+    .linkedinContact,
+    .github {
+        width: 140px;
+    }
+    .linkedinBtn {
+        width: 23px;
+    }
+    .network-name {
+        font-size: 100%;
+    }
+    .githubBtn {
+        width: 36px;
+    }
+}
+
+@media(max-width:569px) and (orientation: landscape){
+    .middleDiv p {
+        top: -30%;
+    }
+    .frontend {
+        bottom: 50%;
+    }
+    .and {
+        bottom: 35%;
+    }
+    .backend {
+        bottom: 20%;
+    }
+    .developer {
+        bottom: 5%;
+    }
+    .portfolioBtn {
+        bottom: 0;
+    }
+    .contactBtn {
+        bottom: -25%;
+    }
+}
+
+@media(max-width:376px) and (orientation: portrait){
+    .project {
+        width: 280px;
+        height: 280px;
+    }
+    .welcome {
+        top: 0;
+    }
+    .to {
+        top: 5%;
+    }
+    .the {
+        top: 11%;
+    }
+    .portfolio {
+        top: 17%;
+    }
+    .of {
+        top: 22%;
+    }
+    .middleDiv p {
+        font-size: 1800%;
+        top: -5%;
+        right: 9%;
+    }
+    .middleDiv {
+        left: 30%;
+    }
+    .name {
+        bottom: 29.5%;
+    }
+    .frontend {
+        bottom: 24%;
+    }
+    .and {
+        bottom: 18.5%;
+    }
+    .backend {
+        bottom: 13%;
+    }
+    .rightDiv .developer {
+        left: -50%;
+        bottom: 7.5%;
+    }
+    .portfolioBtn {
+        bottom: 1.5%;
+    }
+    .contactBtn {
+        bottom: -7%;
+    }
+    #contact li {
+        margin-bottom: 5px;
+    }
+}
+@media(max-width:320px) and (orientation: portrait){
+    .leftDiv p,
+    .rightDiv p {
+        font-size: 110%;
+    }
+    .name {
+        bottom: 24.5%;
+    }
+    .frontend {
+        bottom: 19.5%;
+    }
+    .and {
+        bottom: 14.5%;
+    }
+    .backend {
+        bottom: 9.5%;
+    }
+    .rightDiv .developer {
+        bottom: 4.5%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        left: -142%;
+    }
+    .middleDiv p {
+        right: 14%;
+    }
 }
