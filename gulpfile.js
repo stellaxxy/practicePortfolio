@@ -64,7 +64,7 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.txt',
             '!node_modules/font-awesome/*.md',
             '!node_modules/font-awesome/*.json'
-        ])//'!node_modules/font-awesome/**/*.map',
+        ])
         .pipe(gulp.dest('vendor/font-awesome'))
 })
 
