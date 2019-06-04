@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b31ccbb-742a-4f48-acce-a19ee1a4ffd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/grayscale.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/grayscale.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +57,7 @@
           <entry key="html" value="2144" />
           <entry key="js" value="695" />
           <entry key="less" value="6" />
-          <entry key="scss" value="5936" />
+          <entry key="scss" value="6291" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -67,7 +66,7 @@
           <entry key="HTML" value="2144" />
           <entry key="JavaScript" value="695" />
           <entry key="Less" value="6" />
-          <entry key="SCSS" value="5936" />
+          <entry key="SCSS" value="6291" />
         </counts>
       </usages-collector>
     </session>
@@ -86,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/grayscale.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="1006" column="52" selection-start-line="1006" selection-start-column="52" selection-end-line="1006" selection-end-column="52" />
+            <state relative-caret-position="518">
+              <caret line="1006" column="18" selection-start-line="1006" selection-start-column="18" selection-end-line="1006" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -154,7 +153,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1886" />
+    <option name="x" value="1731" />
+    <option name="y" value="1" />
     <option name="width" value="1325" />
     <option name="height" value="1383" />
   </component>
@@ -236,15 +236,15 @@
       <workItem from="1556770814143" duration="5438000" />
       <workItem from="1559153570450" duration="31110000" />
       <workItem from="1559275849358" duration="64393000" />
-      <workItem from="1559595299227" duration="7224000" />
+      <workItem from="1559595299227" duration="10190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113134000" />
+    <option name="totallyTimeSpent" value="116100000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1901" y="0" width="757" height="790" extended-state="1" />
+    <frame x="1812" y="1" width="757" height="790" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21173105" />
@@ -390,8 +390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/grayscale.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="1006" column="52" selection-start-line="1006" selection-start-column="52" selection-end-line="1006" selection-end-column="52" />
+        <state relative-caret-position="518">
+          <caret line="1006" column="18" selection-start-line="1006" selection-start-column="18" selection-end-line="1006" selection-end-column="18" />
         </state>
       </provider>
     </entry>
