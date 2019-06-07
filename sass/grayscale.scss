@@ -396,12 +396,33 @@ body {
     transform: translateX(-50%);
 }
 
-.projectShowBtn {
+.projectShowBtn,
+.projectGithubBtn {
     position: absolute;
-    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 120%;
+    width: 60%;
+    height: 35px;
+}
+
+.projectGithubBtn:hover,
+.projectShowBtn:hover {
+    cursor: pointer;
+}
+
+.projectShowBtn {
+    bottom: 25%;
+}
+
+.projectGithubBtn {
+    bottom: 10%;
+}
+
+.projectShowBtn span,
+.projectGithubBtn span {
+    position: relative;
+    top: 15%;
 }
 
 .brand-heading {
@@ -732,6 +753,22 @@ h2 {
     .linkedinContact,
     .github {
         border: 3px solid lightgrey;
+    }
+}
+
+@media(max-width:824px) {
+    .projectShowText h4 {
+        margin-bottom: 5px;
+    }
+    .projectShowBtn,
+    .projectGithubBtn {
+        height: auto;
+    }
+    .projectShowBtn {
+        bottom: 22%;
+    }
+    .projectShowText p {
+        font-size: 115%;
     }
 }
 
