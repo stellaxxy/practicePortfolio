@@ -8,7 +8,7 @@ body {
     height: 100%;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
-    background-color: #e4b9c0;
+    background-color: $backgroundColor;
 }
 
 html {
@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0 0 20px;
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -60,7 +60,7 @@ a {
     border-bottom: 1px solid rgba(white, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #e4b9c0;
+    background-color: $backgroundColor;
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
@@ -118,7 +118,7 @@ a {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: #e4b9c0;
+            background: $backgroundColor;
             border-bottom: 1px solid rgba(white, 0.3);
         }
     }
@@ -239,7 +239,7 @@ a {
     width: 100%;
     padding: 50px 0;
     color: white;
-    background-color: #e4b9c0;
+    background-color: $backgroundColor;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -252,7 +252,70 @@ a {
     margin-top: 100px;
 }
 
-@media(min-width:767px) {
+.welcome h1,
+.name h1 {
+    display: inline-block;
+    font-size: 580%;
+    font-family: 'Russo One', sans-serif;
+    margin-right: 5px;
+}
+
+.welcome,
+.name,
+.developer {
+    position: relative;
+    text-align: left;
+}
+
+.name,
+.welcome {
+    height: 100px;
+}
+
+.name {
+    top: 26%;
+}
+
+.welcome {
+    top: 25%;
+}
+
+h1.bar {
+    font-weight: 300;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.developer {
+    top: 29%;
+}
+
+.btnContainer {
+    text-align: left;
+    position: relative;
+    top: 32%;
+}
+
+.dogImg {
+    width: 480px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.leftTitle {
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+}
+
+.rightTitle {
+    width: 49%;
+    display: inline-block;
+    height: 100%;
+    text-align: left;
+}
+
+@media(min-width:768px) {
     .content-section {
         padding-top: 150px;
     }
@@ -268,6 +331,9 @@ a {
 
     .portfolio-download {
         padding-top: 30px;
+    }
+    .container {
+        width: 100%;
     }
 }
 
@@ -389,6 +455,14 @@ body {
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.projectShow h4 {
+    margin-bottom: 10px;
+}
+
+.projectShow p {
+    font-size: 18px;
+}
+
 .projectShowText {
     position: absolute;
     top: 12%;
@@ -450,6 +524,11 @@ body {
     height: 25px;
 }
 
+.icon .githubIcon {
+    width: 20px;
+    height: 20px;
+}
+
 .skillList span {
     font-size: 145%;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -489,12 +568,6 @@ h2 {
     padding-top: 40px;
 }
 
-.leftDiv,
-.middleDiv,
-.rightDiv {
-    display: inline-block;
-}
-
 .intro-body {
     height: 100%;
 }
@@ -512,149 +585,20 @@ h2 {
     position: relative;
 }
 
-.leftDiv,
-.middleDiv,
-.rightDiv {
-    position: absolute;
-    height: 100%;
-}
-
-.leftDiv {
-    width: 28%;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.rightDiv {
-    width: 28%;
-    right: 0;
-}
-
-.middleDiv {
-    width: 44%;
-    left: 28%;
-}
-
-.leftDiv p,
-.rightDiv p {
-    position: absolute;
-    font-family: 'Kanit', sans-serif;
-}
-
-.leftDiv p {
-    font-size: 160%;
-}
-
 .row {
     margin-left: 0;
     margin-right: 0;
 }
 
-.welcome {
-    top: 12%;
-    right: 25%;
-}
-
-.to {
-    top: 19%;
-    right: 22%;
-}
-
-.the {
-    top: 29%;
-    right: 31%;
-}
-
-.portfolio {
-    top: 37%;
-    right: 0;
-}
-
-.of {
-    top: 48%;
-    right: 3%;
-}
-
-.middleDiv p {
-    font-size: 2700%;
-    font-weight: bold;
-    text-shadow: 4px 12px 0 #ce8483;
-}
-
-.name {
-    bottom: 42%;
-    left: 3%;
-}
-
-.frontend {
-    bottom: 35%;
-    left: 3%;
-    font-weight: bold;
-    background-color: white;
-    color: #e4b9c0;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-.and {
-    bottom: 28%;
-    left: 3%;
-}
-
-.backend {
-    bottom: 21%;
-    left: 3%;
-    font-weight: bold;
-    background-color: white;
-    color: #e4b9c0;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-.developer {
-    bottom: 14%;
-    left: 3%;
-}
-
-.rightDiv p {
-    left: 4%;
-    font-size: 140%;
-}
-
-.portfolioBtn {
-    bottom: 9%;
-}
-
-.contactBtn {
-    bottom: 0;
-}
-
 .portfolioBtn,
 .contactBtn {
-    position: absolute;
-    left: 5%;
+    position: relative;
     color: white;
     font-size: 120%;
     border-color: white;
-    width: 185px;
-}
-
-.star1 {
-    width: 130px;
-    position: absolute;
-    right: -160px;
-    top: -100px;
-    animation: starMove 6s infinite;
-}
-
-@keyframes starMove {
-    from {
-        transform: translate(80vw, -120vh);
-    }
-    to {
-        transform: translate(-100vw, 120vh);
-    }
+    width: 250px;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .linkedinBtn,
@@ -671,6 +615,14 @@ h2 {
 .linkedinContact span,
 .github span {
     vertical-align: middle;
+    color: black;
+}
+
+.linkedinContact,
+.github {
+    background-color: white;
+    opacity: 0.8;
+    border: 1px solid gray;
 }
 
 #portfolio {
@@ -680,23 +632,29 @@ h2 {
 .emailLink {
     text-decoration: underline;
 }
-
+@media(max-width:1170px) {
+    .welcome h1,
+    .name h1 {
+        font-size: 500%;
+    }
+}
+@media(max-width:1045px) {
+    .leftTitle {
+        width: 54%;
+    }
+    .rightTitle {
+        width: 45%;
+    }
+    .dogImg {
+        width: 420px;
+        top: 38%;
+    }
+}
 
 @media(max-width:1024px) and (orientation: portrait){
     .nav li {
          font-size: 150%;
      }
-    .leftDiv p {
-        font-size: 220%;
-    }
-    .rightDiv p {
-        font-size: 225%;
-    }
-    .middleDiv p {
-        font-size: 3500%;
-        position: relative;
-        top: 14%;
-    }
     .contactBtn {
         bottom: 7%;
     }
@@ -705,8 +663,8 @@ h2 {
     }
     .portfolioBtn,
     .contactBtn {
-        font-size: 190%;
-        width: 215px;
+        font-size: 220%;
+        width: 380px;
     }
     #about p {
         font-size: 175%;
@@ -716,21 +674,6 @@ h2 {
     }
     #portfolio {
         height: 95%;
-    }
-    .name {
-        bottom: 40%;
-    }
-    .frontend {
-        bottom: 35%;
-    }
-    .and {
-        bottom: 30%;
-    }
-    .backend {
-        bottom: 25%;
-    }
-    .developer {
-        bottom: 20%;
     }
     .skillList h4 {
         font-size: 250%;
@@ -754,8 +697,34 @@ h2 {
     .github {
         border: 3px solid lightgrey;
     }
+    .rightTitle {
+        display: none;
+    }
+    .leftTitle {
+        width: 100%;
+    }
+    .welcome h1,
+    .name h1 {
+        font-size: 900%;
+    }
+    .welcome {
+        height: 150px;
+    }
+    .name {
+        height: 150px;
+    }
+    .developer p {
+        font-size: 280%;
+    }
 }
-
+@media(max-width:972px) {
+    .rightTitle {
+        display: none;
+    }
+    .leftTitle {
+        width: 100%;
+    }
+}
 @media(max-width:824px) {
     .projectShowText h4 {
         margin-bottom: 5px;
@@ -773,44 +742,6 @@ h2 {
 }
 
 @media(max-width:824px) and (orientation: landscape){
-    .leftDiv p {
-        font-size: 125%;
-    }
-    .middleDiv p {
-        font-size: 1500%;
-        position: relative;
-        top: -15%;
-    }
-    .rightDiv p {
-        font-size: 125%;
-    }
-    .to {
-        top: 21%;
-    }
-    .the {
-        top: 35%;
-    }
-    .portfolio {
-        top: 43%;
-    }
-    .of {
-        top: 58%;
-    }
-    .name {
-        bottom: 65%;
-    }
-    .frontend {
-        bottom: 53%;
-    }
-    .and {
-        bottom: 41%;
-    }
-    .backend {
-        bottom: 29%;
-    }
-    .developer {
-        bottom: 17%;
-    }
     .portfolioBtn,
     .contactBtn {
         font-size: 100%;
@@ -847,28 +778,42 @@ h2 {
     footer p {
         font-size: 100%;
     }
+    .welcome h1,
+    .name h1 {
+        font-size: 415%;
+    }
+    .welcome,
+    .name {
+        height: 70px;
+    }
+    .developer p {
+        margin-bottom: 5px;
+    }
+    .welcome {
+        top: 22%;
+    }
+    .name {
+        top: 22%;
+    }
+    .developer {
+        top: 23%;
+    }
+    .btnContainer {
+        top: 28%;
+    }
 }
 
 @media(max-width:768px) and (orientation: portrait) {
     .portfolioBtn,
     .contactBtn {
         font-size: 160%;
-        width: 185px;
+        width: 250px;
     }
     .contactBtn {
         bottom: 6%;
     }
     .nav li {
-        font-size: 110%;
-    }
-    .leftDiv p {
-        font-size: 180%;
-    }
-    .rightDiv p {
-        font-size: 165%;
-    }
-    .middleDiv p {
-        font-size: 2700%;
+        font-size: 100%;
     }
     #about p {
         font-size: 160%;
@@ -882,9 +827,36 @@ h2 {
     .skillList span {
         font-size: 210%;
     }
+    .welcome,
+    .name {
+        height: 100px;
+    }
+    .welcome h1,
+    .name h1 {
+        font-size: 600%;
+    }
+    .developer p {
+        font-size: 230%;
+    }
 }
 
-@media(max-width:681px) and (orientation: portrait){
+@media(max-width:736px) and (orientation: landscape){
+    .welcome {
+        top: 6%;
+    }
+    .name {
+        top: 6%;
+    }
+    .developer {
+        top: 8%;
+    }
+    .btnContainer {
+        top: 15%;
+    }
+}
+
+
+@media(max-width:682px) and (orientation: portrait){
     .skillList h4 {
         font-size: 150%;
         margin-bottom: 15px;
@@ -908,63 +880,6 @@ h2 {
     #portfolio,
     #contact {
         height: auto;
-    }
-    .leftDiv p {
-        font-size: 120%;
-    }
-    .middleDiv p {
-        font-size: 2100%;
-        top: -5%;
-        right: 9%;
-    }
-    .rightDiv p {
-        font-size: 120%;
-        left: -24%;
-    }
-    .welcome {
-        top: 3%;
-        right: 20%;
-    }
-    .to {
-        top: 7%;
-    }
-    .the {
-        top: 13%;
-    }
-    .portfolio {
-        top: 19%;
-    }
-    .of {
-        top: 25%;
-        right: 15%;
-    }
-    .portfolioBtn,
-    .contactBtn {
-        font-size: 92%;
-        width: 116px;
-    }
-    .portfolioBtn {
-        bottom: 3.5%;
-        left: -135%;
-    }
-    .contactBtn {
-        bottom: -4.5%;
-        left: -135%;
-    }
-    .name {
-        bottom: 25.5%;
-    }
-    .frontend {
-        bottom: 20.5%;
-    }
-    .and {
-        bottom: 15.5%;
-    }
-    .backend {
-        bottom: 10.5%;
-    }
-    .developer {
-        bottom: 5.5%;
     }
     #about p {
         font-size: 110%;
@@ -997,111 +912,207 @@ h2 {
     .githubBtn {
         width: 36px;
     }
-}
-
-@media(max-width:569px) and (orientation: landscape){
-    .middleDiv p {
-        top: -30%;
+    .welcome h1,
+    .name h1 {
+        font-size: 480%;
     }
-    .frontend {
-        bottom: 50%;
+    .welcome,
+    .name {
+        height: 70px;
     }
-    .and {
-        bottom: 35%;
+    .developer p {
+        font-size: 170%;
     }
-    .backend {
-        bottom: 20%;
-    }
-    .developer {
-        bottom: 5%;
-    }
-    .portfolioBtn {
-        bottom: 0;
-    }
+    .portfolioBtn,
     .contactBtn {
-        bottom: -25%;
+        font-size: 120%;
     }
 }
 
-@media(max-width:376px) and (orientation: portrait){
-    .project {
-        width: 280px;
-        height: 280px;
+@media(max-width:668px) and (orientation: landscape){
+    .welcome h1,
+    .name h1 {
+        margin-bottom: 5px;
+        font-size: 410%;
     }
     .welcome {
         top: 0;
     }
-    .to {
-        top: 5%;
-    }
-    .the {
-        top: 11%;
-    }
-    .portfolio {
-        top: 17%;
-    }
-    .of {
-        top: 22%;
-    }
-    .middleDiv p {
-        font-size: 1800%;
-        top: -5%;
-        right: 9%;
-    }
-    .middleDiv {
-        left: 30%;
-    }
     .name {
-        bottom: 29.5%;
+        top: 0;
     }
-    .frontend {
-        bottom: 24%;
+    .developer {
+        top: 3%;
     }
-    .and {
-        bottom: 18.5%;
+    .btnContainer {
+        top: 6%;
     }
-    .backend {
-        bottom: 13%;
+}
+
+@media(max-width:569px) and (orientation: landscape){
+    .welcome h1,
+    .name h1 {
+        font-size: 300%;
     }
-    .rightDiv .developer {
-        left: -50%;
-        bottom: 7.5%;
+    .welcome,
+    .name {
+        height: 45px;
     }
-    .portfolioBtn {
-        bottom: 1.5%;
+    .developer p {
+        font-size: 100%;
+        margin-bottom: 0;
     }
+    .portfolioBtn,
     .contactBtn {
-        bottom: -7%;
+        font-size: 80%;
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width:544px){
+    .welcome h1,
+    .name h1 {
+        font-size: 330%;
+    }
+    .developer p {
+        font-size: 130%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 105%;
+    }
+}
+
+
+
+@media(max-width:457px){
+    .welcome h1,
+    .name h1 {
+        font-size: 250%;
+    }
+    .name,
+    .welcome {
+        height: 45px;
+    }
+    .developer p {
+        font-size: 110%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 85%;
+        width: 200px;
+    }
+}
+
+@media(max-width:415px) and (orientation: portrait){
+    .welcome h1,
+    .name h1 {
+        font-size: 310%;
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
+    .welcome,
+    .name {
+        height: 60px;
+    }
+    .developer p {
+        font-size: 130%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 120%;
+        width: 220px;
+    }
+}
+
+@media(max-width:415px) and (max-height: 682px) {
+    .welcome h1,
+    .name h1 {
+        font-size: 250%;
+    }
+    .welcome,
+    .name {
+        height: 45px;
+    }
+    .developer p {
+        font-size: 110%;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 90%;
+        width: 180px;
+    }
+}
+
+@media(max-width:376px) and (orientation: portrait){
+    .welcome h1,
+    .name h1 {
+        font-size: 200%;
+    }
+    .welcome,
+    .name {
+        height: 40px;
+    }
+    .navbar-brand {
+        font-size: 90%;
+    }
+}
+
+@media(max-width:376px) and (max-height: 668px){
+    .project {
+        width: 280px;
+        height: 280px;
+    }
+    .portfolioBtn,
+    .contactBtn {
+        font-size: 110%;
+        width: 200px;
     }
     #contact li {
         margin-bottom: 5px;
     }
-}
-@media(max-width:320px) and (orientation: portrait){
-    .leftDiv p,
-    .rightDiv p {
-        font-size: 110%;
-    }
+    .welcome,
     .name {
-        bottom: 24.5%;
+        height: 50px;
     }
-    .frontend {
-        bottom: 19.5%;
+    .developer p {
+        font-size: 120%;
     }
-    .and {
-        bottom: 14.5%;
+    .welcome h1,
+    .name h1 {
+        font-size: 260%;
     }
-    .backend {
-        bottom: 9.5%;
+}
+
+@media(max-width:320px) and (orientation: portrait){
+    .welcome h1,
+    .name h1 {
+        font-size: 170%;
     }
-    .rightDiv .developer {
-        bottom: 4.5%;
+    .developer p {
+        font-size: 90%;
+    }
+}
+
+@media(max-width:320px) and (max-height: 569px){
+    .welcome h1,
+    .name h1 {
+        font-size: 215%;
+    }
+    .developer p {
+        font-size: 100%;
+    }
+    .welcome,
+    .name {
+        height: 40px;
     }
     .portfolioBtn,
     .contactBtn {
-        left: -142%;
+        width: 160px;
+        font-size: 90%;
     }
-    .middleDiv p {
-        right: 14%;
+    .navbar-brand {
+        font-size: 90%;
     }
 }
