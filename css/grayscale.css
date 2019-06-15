@@ -1,31 +1,29 @@
-/*!
- * Start Bootstrap - Grayscale v3.3.7+1 (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 body {
   width: 100%;
   height: 100%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   background-color: black;
 }
+
 html {
   width: 100%;
   height: 100%;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 35px;
+  margin: 0 0 20px;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
 }
+
 p {
   margin: 0 0 25px;
   font-size: 18px;
@@ -38,20 +36,21 @@ p {
     line-height: 1.6;
   }
 }
+
 a {
-  color: #42DCA3;
+  color: white;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-a:hover,
-a:focus {
-  text-decoration: none;
+a:hover, a:focus {
   color: #1d9b6c;
 }
+
 .light {
   font-weight: 400;
 }
+
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -60,16 +59,16 @@ a:focus {
   background-color: black;
 }
 .navbar-custom .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
   color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 12px;
 }
-.navbar-custom .navbar-toggle:focus,
-.navbar-custom .navbar-toggle:active {
+.navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:active {
   outline: none;
 }
 .navbar-custom .navbar-brand {
   font-weight: 700;
+  color: white;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
@@ -87,8 +86,7 @@ a:focus {
   outline: none;
   background-color: transparent;
 }
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
   outline: none;
   background-color: transparent;
 }
@@ -117,25 +115,20 @@ a:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
+
 .intro {
   display: table;
   width: 100%;
-  height: auto;
-  padding: 100px 0;
+  height: 99%;
+  padding: 80px 0;
   text-align: center;
   color: white;
-  background-color: pink;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
-}
-.intro .intro-body .brand-heading {
-  font-size: 40px;
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
@@ -152,6 +145,7 @@ a:focus {
     font-size: 26px;
   }
 }
+
 .btn-circle {
   width: 70px;
   height: 70px;
@@ -166,8 +160,7 @@ a:focus {
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
-.btn-circle:hover,
-.btn-circle:focus {
+.btn-circle:hover, .btn-circle:focus {
   outline: none;
   color: white;
   background: rgba(255, 255, 255, 0.1);
@@ -188,8 +181,9 @@ a:focus {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
+
 @-webkit-keyframes pulse {
-  0% {
+  from {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -203,7 +197,7 @@ a:focus {
   }
 }
 @-moz-keyframes pulse {
-  0% {
+  from {
     -moz-transform: scale(1);
     transform: scale(1);
   }
@@ -219,6 +213,7 @@ a:focus {
 .content-section {
   padding-top: 100px;
 }
+
 .download-section {
   width: 100%;
   padding: 50px 0;
@@ -229,21 +224,96 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
+
 #map {
   width: 100%;
   height: 200px;
   margin-top: 100px;
 }
-@media (min-width: 767px) {
+
+.welcome h1,
+.name h1 {
+  display: inline-block;
+  font-size: 580%;
+  font-family: "Russo One", sans-serif;
+  margin-right: 5px;
+}
+
+.welcome,
+.name,
+.developer {
+  position: relative;
+  text-align: left;
+}
+
+.name,
+.welcome {
+  height: 100px;
+}
+
+.name {
+  top: 26%;
+}
+
+.welcome {
+  top: 25%;
+}
+
+h1.bar {
+  font-weight: 300;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.developer {
+  top: 29%;
+}
+
+.btnContainer {
+  text-align: left;
+  position: relative;
+  top: 32%;
+}
+
+.dogImg {
+  width: 480px;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.leftTitle {
+  width: 50%;
+  display: inline-block;
+  height: 100%;
+}
+
+.rightTitle {
+  width: 49%;
+  display: inline-block;
+  height: 100%;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
   .content-section {
-    padding-top: 250px;
+    padding-top: 150px;
   }
+
   .download-section {
     padding: 100px 0;
   }
+
   #map {
     height: 400px;
     margin-top: 250px;
+  }
+
+  .portfolio-download {
+    padding-top: 30px;
+  }
+
+  .container {
+    width: 100%;
   }
 }
 .btn {
@@ -255,18 +325,19 @@ a:focus {
   transition: all 0.3s ease-in-out;
   border-radius: 0;
 }
+
 .btn-default {
   border: 1px solid #42DCA3;
   color: #42DCA3;
   background-color: transparent;
 }
-.btn-default:hover,
-.btn-default:focus {
+.btn-default:hover, .btn-default:focus {
   border: 1px solid #42DCA3;
   outline: none;
   color: black;
   background-color: #42DCA3;
 }
+
 ul.banner-social-buttons {
   margin-top: 0;
 }
@@ -285,28 +356,833 @@ ul.banner-social-buttons {
     margin-bottom: 0;
   }
 }
+
 footer {
   padding: 50px 0;
 }
 footer p {
   margin: 0;
 }
+
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
 }
+
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
 }
+
 img::selection {
   background: transparent;
 }
+
 img::-moz-selection {
   background: transparent;
 }
+
 body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
+
+.project {
+  width: 330px;
+  height: 330px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+.memoryMatch {
+  background-image: url("../img/Screenshot (16).png");
+}
+
+.expenseTracker {
+  background-image: url("../img/Screenshot (17).png");
+}
+
+.paws {
+  background-image: url("../img/Screenshot (18).png");
+}
+
+.memoryMatch,
+.expenseTracker,
+.paws {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.projectShow {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  border-radius: 15px;
+}
+
+.projectShow h4,
+.projectShow p {
+  color: #5e5e5e;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.projectShow h4 {
+  margin-bottom: 10px;
+}
+
+.projectShow p {
+  font-size: 18px;
+}
+
+.projectShowText {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.projectShowBtn,
+.projectGithubBtn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120%;
+  width: 60%;
+  height: 35px;
+}
+
+.projectGithubBtn:hover,
+.projectShowBtn:hover {
+  cursor: pointer;
+}
+
+.projectShowBtn {
+  bottom: 25%;
+}
+
+.projectGithubBtn {
+  bottom: 10%;
+}
+
+.projectShowBtn span,
+.projectGithubBtn span {
+  position: relative;
+  top: 15%;
+}
+
+.brand-heading {
+  font-size: 490%;
+}
+
+.firstSkillRow .skillList {
+  width: 33.3%;
+}
+
+.skillList {
+  display: inline-block;
+}
+
+.skillList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skillList ul li {
+  position: relative;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.icon .githubIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.skillList span {
+  font-size: 145%;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.skillList h4 {
+  font-size: 170%;
+}
+
+h2 {
+  font-size: 270%;
+}
+
+.mainSkillDiv {
+  width: 100%;
+}
+
+.firstSkillRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.secondSkillRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#skills {
+  padding-top: 100px;
+  height: 100%;
+}
+
+#skills .download-section {
+  padding-top: 40px;
+}
+
+.intro-body {
+  height: 100%;
+}
+
+.container,
+.introContainer {
+  height: 100%;
+}
+
+.introRow {
+  height: 100%;
+}
+
+.introContainer {
+  position: relative;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.portfolioBtn,
+.contactBtn {
+  position: relative;
+  color: white;
+  font-size: 120%;
+  border-color: white;
+  width: 250px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.linkedinBtn,
+.githubBtn {
+  width: 22px;
+  padding-right: 5%;
+  vertical-align: middle;
+}
+
+.githubBtn {
+  width: 35px;
+}
+
+.linkedinContact span,
+.github span {
+  vertical-align: middle;
+  color: black;
+}
+
+.linkedinContact,
+.github {
+  background-color: white;
+  opacity: 0.8;
+  border: 1px solid gray;
+}
+
+#portfolio {
+  padding-top: 100px;
+}
+
+.emailLink {
+  text-decoration: underline;
+}
+
+@media (max-width: 1170px) {
+  .welcome h1,
+.name h1 {
+    font-size: 500%;
+  }
+}
+@media (max-width: 1045px) {
+  .leftTitle {
+    width: 54%;
+  }
+
+  .rightTitle {
+    width: 45%;
+  }
+
+  .dogImg {
+    width: 420px;
+    top: 38%;
+  }
+}
+@media (max-width: 1024px) and (orientation: portrait) {
+  .nav li {
+    font-size: 150%;
+  }
+
+  .contactBtn {
+    bottom: 7%;
+  }
+
+  .portfolioBtn {
+    bottom: 13%;
+  }
+
+  .portfolioBtn,
+.contactBtn {
+    font-size: 220%;
+    width: 380px;
+  }
+
+  #about p {
+    font-size: 175%;
+  }
+
+  h2 {
+    font-size: 400%;
+  }
+
+  #portfolio {
+    height: 95%;
+  }
+
+  .skillList h4 {
+    font-size: 250%;
+  }
+
+  .skillList span {
+    font-size: 230%;
+  }
+
+  #contact p {
+    font-size: 210%;
+  }
+
+  .network-name {
+    font-size: 170%;
+  }
+
+  .linkedinBtn {
+    width: 48px;
+  }
+
+  .githubBtn {
+    width: 73px;
+  }
+
+  .linkedinContact,
+.github {
+    border: 3px solid lightgrey;
+  }
+
+  .rightTitle {
+    display: none;
+  }
+
+  .leftTitle {
+    width: 100%;
+  }
+
+  .welcome h1,
+.name h1 {
+    font-size: 900%;
+  }
+
+  .welcome {
+    height: 150px;
+  }
+
+  .name {
+    height: 150px;
+  }
+
+  .developer p {
+    font-size: 280%;
+  }
+}
+@media (max-width: 972px) {
+  .rightTitle {
+    display: none;
+  }
+
+  .leftTitle {
+    width: 100%;
+  }
+}
+@media (max-width: 824px) {
+  .projectShowText h4 {
+    margin-bottom: 5px;
+  }
+
+  .projectShowBtn,
+.projectGithubBtn {
+    height: auto;
+  }
+
+  .projectShowBtn {
+    bottom: 22%;
+  }
+
+  .projectShowText p {
+    font-size: 115%;
+  }
+}
+@media (max-width: 824px) and (orientation: landscape) {
+  .portfolioBtn,
+.contactBtn {
+    font-size: 100%;
+    width: 140px;
+  }
+
+  .contactBtn {
+    bottom: -10%;
+  }
+
+  h2 {
+    font-size: 220%;
+  }
+
+  #about p {
+    font-size: 100%;
+  }
+
+  .skillList h4 {
+    font-size: 150%;
+  }
+
+  .skillList span {
+    font-size: 120%;
+  }
+
+  #skills {
+    height: auto;
+  }
+
+  .project {
+    width: 280px;
+    height: 280px;
+  }
+
+  #contact p {
+    font-size: 100%;
+  }
+
+  #contact a {
+    font-size: 100%;
+  }
+
+  footer p {
+    font-size: 100%;
+  }
+
+  .welcome h1,
+.name h1 {
+    font-size: 415%;
+  }
+
+  .welcome,
+.name {
+    height: 70px;
+  }
+
+  .developer p {
+    margin-bottom: 5px;
+  }
+
+  .welcome {
+    top: 22%;
+  }
+
+  .name {
+    top: 22%;
+  }
+
+  .developer {
+    top: 23%;
+  }
+
+  .btnContainer {
+    top: 28%;
+  }
+}
+@media (max-width: 768px) and (orientation: portrait) {
+  .portfolioBtn,
+.contactBtn {
+    font-size: 160%;
+    width: 250px;
+  }
+
+  .contactBtn {
+    bottom: 6%;
+  }
+
+  .nav li {
+    font-size: 100%;
+  }
+
+  #about p {
+    font-size: 160%;
+  }
+
+  h2 {
+    font-size: 350%;
+  }
+
+  .skillList h4 {
+    font-size: 230%;
+  }
+
+  .skillList span {
+    font-size: 210%;
+  }
+
+  .welcome,
+.name {
+    height: 100px;
+  }
+
+  .welcome h1,
+.name h1 {
+    font-size: 600%;
+  }
+
+  .developer p {
+    font-size: 230%;
+  }
+}
+@media (max-width: 736px) and (orientation: landscape) {
+  .welcome {
+    top: 6%;
+  }
+
+  .name {
+    top: 6%;
+  }
+
+  .developer {
+    top: 8%;
+  }
+
+  .btnContainer {
+    top: 15%;
+  }
+}
+@media (max-width: 682px) and (orientation: portrait) {
+  .skillList h4 {
+    font-size: 150%;
+    margin-bottom: 15px;
+  }
+
+  .firstSkillRow .skillList {
+    width: 100%;
+  }
+
+  .firstSkillRow {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  #contact a,
+#contact p {
+    font-size: 120%;
+  }
+
+  h2 {
+    font-size: 210%;
+  }
+
+  #about,
+#skills,
+#portfolio,
+#contact {
+    height: auto;
+  }
+
+  #about p {
+    font-size: 110%;
+  }
+
+  .skillList span {
+    font-size: 125%;
+  }
+
+  .skillList {
+    margin-bottom: 30px;
+  }
+
+  .secondSkillRow .skillList {
+    width: 100%;
+  }
+
+  .secondSkillRow {
+    flex-wrap: wrap;
+  }
+
+  footer p {
+    font-size: 90%;
+  }
+
+  .linkedinContact,
+.github {
+    width: 140px;
+  }
+
+  .linkedinBtn {
+    width: 23px;
+  }
+
+  .network-name {
+    font-size: 100%;
+  }
+
+  .githubBtn {
+    width: 36px;
+  }
+
+  .welcome h1,
+.name h1 {
+    font-size: 480%;
+  }
+
+  .welcome,
+.name {
+    height: 70px;
+  }
+
+  .developer p {
+    font-size: 170%;
+  }
+
+  .portfolioBtn,
+.contactBtn {
+    font-size: 120%;
+  }
+}
+@media (max-width: 668px) and (orientation: landscape) {
+  .welcome h1,
+.name h1 {
+    margin-bottom: 5px;
+    font-size: 410%;
+  }
+
+  .welcome {
+    top: 0;
+  }
+
+  .name {
+    top: 0;
+  }
+
+  .developer {
+    top: 3%;
+  }
+
+  .btnContainer {
+    top: 6%;
+  }
+}
+@media (max-width: 569px) and (orientation: landscape) {
+  .welcome h1,
+.name h1 {
+    font-size: 300%;
+  }
+
+  .welcome,
+.name {
+    height: 45px;
+  }
+
+  .developer p {
+    font-size: 100%;
+    margin-bottom: 0;
+  }
+
+  .portfolioBtn,
+.contactBtn {
+    font-size: 80%;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 544px) {
+  .welcome h1,
+.name h1 {
+    font-size: 330%;
+  }
+
+  .developer p {
+    font-size: 130%;
+  }
+
+  .portfolioBtn,
+.contactBtn {
+    font-size: 105%;
+  }
+}
+@media (max-width: 457px) {
+  .welcome h1,
+.name h1 {
+    font-size: 250%;
+  }
+
+  .name,
+.welcome {
+    height: 45px;
+  }
+
+  .developer p {
+    font-size: 110%;
+  }
+
+  .portfolioBtn,
+.contactBtn {
+    font-size: 85%;
+    width: 200px;
+  }
+}
+@media (max-width: 415px) and (orientation: portrait) {
+  .welcome h1,
+.name h1 {
+    font-size: 310%;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  .welcome,
+.name {
+    height: 60px;
+  }
+
+  .developer p {
+    font-size: 130%;
+  }
+
+  .portfolioBtn,
+.contactBtn {
+    font-size: 120%;
+    width: 220px;
+  }
+}
+@media (max-width: 415px) and (max-height: 682px) {
+  .welcome h1,
+.name h1 {
+    font-size: 250%;
+  }
+
+  .welcome,
+.name {
+    height: 45px;
+  }
+
+  .developer p {
+    font-size: 110%;
+  }
+
+  .portfolioBtn,
+.contactBtn {
+    font-size: 90%;
+    width: 180px;
+  }
+}
+@media (max-width: 376px) and (orientation: portrait) {
+  .welcome h1,
+.name h1 {
+    font-size: 200%;
+  }
+
+  .welcome,
+.name {
+    height: 40px;
+  }
+
+  .navbar-brand {
+    font-size: 90%;
+  }
+}
+@media (max-width: 376px) and (max-height: 668px) {
+  .project {
+    width: 280px;
+    height: 280px;
+  }
+
+  .portfolioBtn,
+.contactBtn {
+    font-size: 110%;
+    width: 200px;
+  }
+
+  #contact li {
+    margin-bottom: 5px;
+  }
+
+  .welcome,
+.name {
+    height: 50px;
+  }
+
+  .developer p {
+    font-size: 120%;
+  }
+
+  .welcome h1,
+.name h1 {
+    font-size: 260%;
+  }
+}
+@media (max-width: 320px) and (orientation: portrait) {
+  .welcome h1,
+.name h1 {
+    font-size: 170%;
+  }
+
+  .developer p {
+    font-size: 90%;
+  }
+}
+@media (max-width: 320px) and (max-height: 569px) {
+  .welcome h1,
+.name h1 {
+    font-size: 215%;
+  }
+
+  .developer p {
+    font-size: 100%;
+  }
+
+  .welcome,
+.name {
+    height: 40px;
+  }
+
+  .portfolioBtn,
+.contactBtn {
+    width: 160px;
+    font-size: 90%;
+  }
+
+  .navbar-brand {
+    font-size: 90%;
+  }
+}
+
+/*# sourceMappingURL=grayscale.css.map */
